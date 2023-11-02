@@ -1,16 +1,18 @@
-#include "binary_tree.h"
+#include "binary_trees.h"
 
 /**
-print_t - Stores recursively eat each level in string array.
-@tree: Pointer  to the node print
-@offset: Offest to print
-@depth: Depth of node
-@s: Buffer
-Return: length of printed tree post process
-*/
+ * print_t - Stores recursively each level in an array of strings
+ *
+ * @tree: Pointer to the node to print
+ * @offset: Offset to print
+ * @depth: Depth of the node
+ * @s: Buffer
+ *
+ * Return: length of printed tree after process
+ */
 static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
 {
-    char b[6];
+	char b[6];
 	int width, left, right, is_left, i;
 
 	if (!tree)
