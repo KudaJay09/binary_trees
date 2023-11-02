@@ -1,4 +1,4 @@
-#include "binary_tree.h"
+#include "binary_trees.h"
 
 /**
 binary_tree_is_avl - checks if a binary tree is a valid.
